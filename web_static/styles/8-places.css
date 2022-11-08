@@ -1,9 +1,14 @@
 .places h1 {
     font-size: 30px;
     margin-bottom: 0%;
+    padding-left: 22px;
+    width: 100%;
 }
 .places {
-    align-items: center;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 article {
     width: 390px;
@@ -11,93 +16,36 @@ article {
     margin: 20px;
     border: #FF5A5F 1px solid;
     border-radius: 4px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 article h2 {
     font-size: 30px;
     text-align: center;
-    margin: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .price_by_night {
-    display: flex;
     font-size: 30px;
     color: #FF5A5F;
     border: #FF5A5F 4px solid;
     border-radius: 50%;
     min-width: 60px;
     height: 60px;
-    position:relative;
-    top: -40px;
-    float: right;
-    padding: 5px;
-    align-items: center;
-
+    display: flex;
+    line-height: 60px;
 }
 .information {
     height: 80px;
     width: 100%;
     border-bottom: #DDDDDD 1px solid;
     border-top: #DDDDDD 1px solid;
-    display: flex;
-    position: relative;
-    top: -30px;
-    align-items: center;
-	padding: 0 auto;
-}
-.max_guest h3 {
-    margin:0%;
-	text-align:center;
+    display: flex;     
 }
 .max_guest {
-     width: 100px;
-    display: inline-block;
-	margin: auto;
-}
-.max_guest .icon {
-	width: 100px;
-	height: 60px;
-	background-image: url("../images/icon_group.png");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.number_rooms h3 {
-    margin:0%;
-	text-align:center;
-}
-.number_rooms {
-     width: 100px;
-    display: inline-block;
-	margin: auto;
-}
-.number_rooms .icon {
-	width: 100px;
-	height: 60px;
-	background-image: url("../images/icon_bed.png");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.number_bathrooms h3 {
-    margin:0%;
-	text-align:center;
-}
-.number_bathrooms {
-     width: 100px;
-    display: inline-block;
-	margin: auto;
-}
-.number_bathrooms .icon {
-	width: 100px;
-	height: 60px;
-	background-image: url("../images/icon_bath.png");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.user {
-    border-bottom: #DDDDDD 1px; 
-    border-top: #DDDDDD 1px;
-    display: inline-block;
-	text-align: left;
-}
-.user p {
-	font-weight: bold;
+    width: 100px;
+    display: block;
+    text-align: center;
 }
